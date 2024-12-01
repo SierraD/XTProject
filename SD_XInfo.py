@@ -35,7 +35,7 @@ if Activated == True:
 
     elif Opt == "Thumbwheel":
         st.sidebar.success("The :green[Thumbwheel] option takes user input and displays all associated information for the thumbwheel specified.")
-        st.sidebar.write("The information displayed includes all XT Pages on which the thumbwheel appears, as well as the keyword system, and all associated text.")
+        st.sidebar.write("To read the thumbwheel properly, the user input must include the entire thumbwheel, such as :blue[TK 733 MUX], :blue[B1 3 DIGI], etc. The information displayed includes all XT Pages on which the thumbwheel appears, as well as the keyword system, and all associated text.")
 
 if Search_Options == "Text":
     User_Input = col1.text_input("Please enter your search here :pencil:")
