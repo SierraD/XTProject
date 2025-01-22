@@ -10,12 +10,12 @@ import streamlit as st
 # Configure the page, with headings and layout columns
 st.set_page_config(layout="wide")
 st.header(":cyclone: XTP Search Application")
-st.markdown(":floppy_disk: Last updated 2025-01-12, SDean")
+st.markdown(":floppy_disk: Last updated 2025-01-22, SDean")
 col1, col2 = st.columns(2)
 col3, col4 = col2.columns(2)
 
 # Add a toggle for the help walktrhough and interactive table formatting
-col1.success("An X search with a large degree of freedom.")
+col1.success("A TRIUMF DCR XT Search")
 opt = col3.toggle("Change table formatting")
 sidebar = col4.toggle("Need help?")
 
@@ -110,7 +110,8 @@ if User_Input != "":
                 scan_ind = SCNS_readable[SCNS_readable["Scan"]==XTP_df["Scan Element"][TW_df.index[0]][i][0]].index
                 el_ind = SCNS_readable[SCNS_readable["Element"]==XTP_df["Scan Element"][TW_df.index[0]][i][j]].index
                 scan_info = list(set(scan_ind).intersection(set(el_ind)))
-                Scan_Inf = pd.concat([Scan_Inf, SCNS_readable[scan_info[0]:scan_info[0]+1]])
+                if len(scan_info) != 0:
+                    Scan_Inf = pd.concat([Scan_Inf, SCNS_readable[scan_info[0]:scan_info[0]+1]])                    
         # Display all scan results for the thumbwheel
         if opt == True:
             st.dataframe(Scan_Inf, hide_index=True, width=8000)
