@@ -1,3 +1,3 @@
 # XTProject
 
-An interactive Streamlit application for navigating the information contained on XT Pages.
+XTProject is an interactive application to automate navigating the XT and Scan information used by Driver Ops. The app is hosted on Streamlit, an open-source Python framework for interactive data science apps. The source code fed into the application is maintained and updated manually, using the preparation file included in the software repository. The app itself includes a general operation walkthrough, visible when toggling the help option. The data can be viewed using two types of displays, an inline table which enables the entire script to be read seamlessly, and an interactive dataframe which can be downloaded as a pre-formatted CSV file with the click of a button. The app enables searching the XT source code for individual Thumbwheels, XT Pages, Scans, Scan Elements, and Associated Text, allowing for quick navigation with a large degree of freedom. 
