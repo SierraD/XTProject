@@ -12,7 +12,7 @@ import streamlit as st
 # Configure the page, with headings and layout columns
 st.set_page_config(layout="wide")
 st.header(":cyclone: XTP Search Application")
-st.markdown(":floppy_disk: Last updated 2025-01-22, SDean")
+st.markdown(":floppy_disk: Last updated 2025-02-02, SDean")
 col1, col2 = st.columns(2)
 col3, col4 = col2.columns(2)
 
